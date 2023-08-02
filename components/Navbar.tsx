@@ -22,7 +22,7 @@ export default async function Navbar() {
         {session?.user ? (
           <UserAccountNav user={session.user} />
         ) : (
-          <Link href={"/sign-in"} className={buttonVariants()}>
+          <Link href="/sign-in" className={buttonVariants()}>
             Sign in
           </Link>
         )}
